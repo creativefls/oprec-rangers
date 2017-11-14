@@ -13,8 +13,8 @@
                     <p>Dashboard</p>
                 </a>
             </li>
-            <li class="{{ Route::currentRouteName() == "sponsors.index" ? "active" : "" }}">
-                <a href="{{ route('sponsors.index') }}">
+            <li class="{{ Route::currentRouteName() == "participants.index" ? "active" : "" }}">
+                <a href="{{ route('participants.index') }}">
                     <i class="ti-view-list-alt"></i>
                     <p>Tabel Pendaftar</p>
                 </a>

@@ -15,7 +15,9 @@ class ParticipantController extends Controller
      */
     public function index()
     {
-        //
+        $participants = Participant::orderBy('created_at', 'desc')->get();
+
+        return view('admin.participant-table', compact('participants'));
     }
 
     /**
