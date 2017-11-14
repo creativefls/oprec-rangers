@@ -1,7 +1,7 @@
 <?php
 
 //Wizard Sponsor Submit
-Route::get('/', 'SponsorController@createWizard');
+Route::get('/', 'ParticipantController@index');
 Route::post('/sponsor', 'SponsorController@store');
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -19,3 +19,5 @@ Route::middleware(['auth'])->prefix('admin')->group(function (){
 Route::middleware(['superadmin'])->prefix('admin')->group(function (){
     Route::resource('users', 'UserController');
 });
+
+Route::resource('participants', 'ParticipantController');
