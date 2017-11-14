@@ -2,7 +2,7 @@
     <div class="sidebar-wrapper">
         <div class="logo">
             <a href="http://www.creative-tim.com" class="simple-text">
-                Marketing FLS 2017
+                Oprec FLS
             </a>
         </div>
 
@@ -16,7 +16,7 @@
             <li class="{{ Route::currentRouteName() == "sponsors.index" ? "active" : "" }}">
                 <a href="{{ route('sponsors.index') }}">
                     <i class="ti-view-list-alt"></i>
-                    <p>Tabel Sponsorship</p>
+                    <p>Tabel Pendaftar</p>
                 </a>
             </li>
             @if (Auth::user()->role == 0)

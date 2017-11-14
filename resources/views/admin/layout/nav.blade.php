@@ -7,7 +7,7 @@
                 <span class="icon-bar bar2"></span>
                 <span class="icon-bar bar3"></span>
             </button>
-            <a class="navbar-brand" href="#">Dashboard Marketing FLS</a>
+            <a class="navbar-brand" href="#">Dashboard Oprec FLS</a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
