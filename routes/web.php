@@ -1,7 +1,7 @@
 <?php
 
 //Wizard Sponsor Submit
-Route::get('/', 'ParticipantController@index');
+Route::get('/', 'ParticipantController@create');
 Route::post('/sponsor', 'SponsorController@store');
 Route::get('/home', 'HomeController@index')->name('home');
 

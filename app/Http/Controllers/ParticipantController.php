@@ -15,7 +15,7 @@ class ParticipantController extends Controller
      */
     public function index()
     {
-        return view('participant.register');
+        //
     }
 
     /**
@@ -25,7 +25,7 @@ class ParticipantController extends Controller
      */
     public function create()
     {
-        //
+        return view('participant.register');
     }
 
     /**
