@@ -14,16 +14,10 @@
                         <div class="col-xs-7">
                             <div class="numbers">
                                 <p>Total</p>
-                                {{ $sponsors->countAll() }}
+                                {{ $participants->countAll() }}
                             </div>
                         </div>
                     </div>
-                    {{-- <div class="footer">
-                        <hr />
-                        <div class="stats">
-                            <i class="ti-reload"></i> Updated now
-                        </div>
-                    </div> --}}
                 </div>
             </div>
         </div>
@@ -38,17 +32,11 @@
                         </div>
                         <div class="col-xs-7">
                             <div class="numbers">
-                                <p>Fresh Money</p>
-                                {{ $sponsors->countFreshMoney() }}
+                                <p>Program</p>
+                                {{ $participants->countProgram() }}
                             </div>
                         </div>
                     </div>
-                    {{-- <div class="footer">
-                        <hr />
-                        <div class="stats">
-                            <i class="ti-calendar"></i> Last day
-                        </div>
-                    </div> --}}
                 </div>
             </div>
         </div>
@@ -63,8 +51,8 @@
                         </div>
                         <div class="col-xs-7">
                             <div class="numbers">
-                                <p>In-Kind</p>
-                                {{ $sponsors->countInKind() }}
+                                <p>Marketing</p>
+                                {{ $participants->countMarketing() }}
                             </div>
                         </div>
                     </div>
@@ -83,13 +71,13 @@
                     <div class="row">
                         <div class="col-xs-5">
                             <div class="icon-big icon-info text-center">
-                                <i class="ti-twitter-alt"></i>
+                                <i class="ti-pulse"></i>
                             </div>
                         </div>
                         <div class="col-xs-7">
                             <div class="numbers">
-                                <p>Media Partner</p>
-                                {{ $sponsors->countMediaPartner() }}
+                                <p>Communication</p>
+                                {{ $participants->countCommunication() }}
                             </div>
                         </div>
                     </div>
@@ -99,6 +87,101 @@
                             <i class="ti-reload"></i> Updated now
                         </div>
                     </div> --}}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <div class="icon-big icon-info text-center">
+                                <i class="ti-pulse"></i>
+                            </div>
+                        </div>
+                        <div class="col-xs-7">
+                            <div class="numbers">
+                                <p>LO</p>
+                                {{ $participants->countLO() }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <div class="icon-big icon-info text-center">
+                                <i class="ti-pulse"></i>
+                            </div>
+                        </div>
+                        <div class="col-xs-7">
+                            <div class="numbers">
+                                <p>General Affairs</p>
+                                {{ $participants->countGeneralAffairs() }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <div class="icon-big icon-info text-center">
+                                <i class="ti-pulse"></i>
+                            </div>
+                        </div>
+                        <div class="col-xs-7">
+                            <div class="numbers">
+                                <p>PID</p>
+                                {{ $participants->countPID() }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <div class="icon-big icon-info text-center">
+                                <i class="ti-pulse"></i>
+                            </div>
+                        </div>
+                        <div class="col-xs-7">
+                            <div class="numbers">
+                                <p>Creative</p>
+                                {{ $participants->countCreative() }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <div class="icon-big icon-info text-center">
+                                <i class="ti-pulse"></i>
+                            </div>
+                        </div>
+                        <div class="col-xs-7">
+                            <div class="numbers">
+                                <p>IT</p>
+                                {{ $participants->countIT() }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

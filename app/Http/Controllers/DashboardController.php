@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Sponsor;
+use App\Participant;
 
 class DashboardController extends Controller
 {
     function show(){
-        $sponsors = new Sponsor();
+        $participants = new Participant();
 
-        return view('admin.dashboard', compact('sponsors'));
+        return view('admin.dashboard', compact('participants'));
     }
 }
