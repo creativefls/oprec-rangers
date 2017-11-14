@@ -82,7 +82,9 @@ class ParticipantController extends Controller
      */
     public function show($id)
     {
-        //
+        $participant = Participant::findOrFail($id);
+
+        return view('admin.participant-show', compact('participant'));
     }
 
     /**
