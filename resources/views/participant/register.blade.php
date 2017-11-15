@@ -19,7 +19,7 @@
                                 </div>
                             </div>
                         @endif
-                        <img src="{{ asset('img/fls_logo_white_bot.png') }}" class="img-fluid" alt="Future Leader Summit">
+                        <img src="{{ asset('img/fls_logo_white_bot.png') }}" class="img-fluid mx-auto d-block" alt="Future Leader Summit">
                         <h3 class="title">Pendaftaran Rangers 2018</h3>
 
                         {{Form::open(['route' => 'participants.store', 'files' => true])}}
@@ -106,7 +106,7 @@
                             {{Form::file('file_cv', '', ['required' => ['required']])}}
                         </div>
 
-                        {{Form::submit('Submit', ['class' => 'btn btn-danger btn-block btn-round'])}}
+                        {{Form::submit('Submit', ['class' => 'btn btn-danger btn-lg btn-round'])}}
 
                         {{Form::close()}}
                         <div class="forgot">
@@ -162,6 +162,9 @@
         .btn.btn-link,
         .card-register .title {
             color: #fff;
+        }
+        .img-fluid {
+            max-width: 50%;
         }
     </style>
 @endsection
