@@ -19,7 +19,8 @@
                                 </div>
                             </div>
                         @endif
-                        <h3 class="title">Pendaftaran Rangers FLS 2018</h3>
+                        <img src="{{ asset('img/fls_logo_white_bot.png') }}" class="img-fluid" alt="Future Leader Summit">
+                        <h3 class="title">Pendaftaran Rangers 2018</h3>
 
                         {{Form::open(['route' => 'participants.store', 'files' => true])}}
                         <div class="form-group">
@@ -136,10 +137,31 @@
     <style media="screen">
         .card-register {
             max-width: 100% !important;
-            margin: 50px !important;
+            margin: 50px 0 !important;
+            background-color: #203e5f;;
         }
         .page-header {
             max-height: none !important;
+        }
+        label {
+            font-size: 11pt;
+        }
+        .form-group p {
+            font-size: 9pt;
+        }
+        .btn-danger {
+            background-color: #ffcc03;
+            border-color: #ffcc03;
+            color: #203e5f;
+        }
+        .btn-danger:hover {
+            background-color: #ff9900;
+            border-color: #ff9900;
+            color: #203e5f;
+        }
+        .btn.btn-link,
+        .card-register .title {
+            color: #fff;
         }
     </style>
 @endsection
