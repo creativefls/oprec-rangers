@@ -86,17 +86,17 @@
 
                         <div class="form-group">
                             {{Form::label('instagram_link', 'ID Instagram', ['class' => 'control-label'])}}
-                            {{Form::text('instagram_link', '', ['class' => 'form-control', 'placeholder' => 'ex: wkwksama'])}}
+                            {{Form::text('instagram_link', '', ['class' => 'form-control', 'placeholder' => 'wkwksama'])}}
                         </div>
 
                         <div class="form-group">
                             {{Form::label('twitter_link', 'Twitter', ['class' => 'control-label'])}}
-                            {{Form::text('twitter_link', '', ['class' => 'form-control', 'placeholder' => 'ex: wkwksama'])}}
+                            {{Form::text('twitter_link', '', ['class' => 'form-control', 'placeholder' => 'wkwksama'])}}
                         </div>
 
                         <div class="form-group">
                             {{Form::label('facebook_link', 'Facebook', ['class' => 'control-label'])}}
-                            {{Form::text('facebook_link', '', ['class' => 'form-control', 'placeholder' => 'ex: wkwksama'])}}
+                            {{Form::text('facebook_link', '', ['class' => 'form-control', 'placeholder' => 'wkwksama'])}}
                         </div>
 
                         <div class="form-group">
@@ -109,7 +109,7 @@
                         <div class="form-group">
                           {{Form::label('portfolio_link', 'Link Portofolio', ['class' => 'control-label'])}}
                           <p>* untuk Creative dan IT</p>
-                          {{Form::text('portfolio_link', '', ['class' => 'form-control', 'placeholder' => 'ex: wkwksama.deviantart.com'])}}
+                          {{Form::text('portfolio_link', '', ['class' => 'form-control', 'placeholder' => 'http://wkwksama.deviantart.com'])}}
                         </div>
 
                         {{Form::submit('Submit', ['class' => 'btn btn-danger btn-lg btn-round'])}}
