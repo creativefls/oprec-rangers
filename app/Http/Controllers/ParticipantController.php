@@ -43,15 +43,16 @@ class ParticipantController extends Controller
             'university'        => 'required',
             'year'              => 'required',
             'primary_division'  => 'required',
+            'primary_reason'       => 'required',
             'secondary_division'=> 'required',
-            'explanation'       => 'required',
-            'participant_cv'    => 'required',
+            'secondary_reason'       => 'required',
+            'file_cv'    => 'required',
             'email'             => 'required|unique:participants'
         ]);
 
-        $cvFileName = str_replace(" ", "_", $request->name) . '_' . time() . '.' . $request->participant_cv->getClientOriginalExtension();
+        $cvFileName = str_replace(" ", "_", $request->name) . '_' . time() . '.' . $request->file_cv->getClientOriginalExtension();
         $cvFilePath = 'files/kmzway87aa';
-        $request->participant_cv->move(public_path($cvFilePath), $cvFileName);
+        $request->file_cv->move(public_path($cvFilePath), $cvFileName);
         $cvLink = asset($cvFilePath) . '/' . $cvFileName;
 
         $participant = new Participant();
@@ -60,8 +61,9 @@ class ParticipantController extends Controller
         $participant->university = $request->university;
         $participant->year = $request->year;
         $participant->primary_division = $request->primary_division;
+        $participant->primary_reason = $request->primary_reason;
         $participant->secondary_division = $request->secondary_division;
-        $participant->explanation = $request->explanation;
+        $participant->secondary_reason = $request->secondary_reason;
         $participant->email = $request->email;
         $participant->instagram_link = $request->instagram_link;
         $participant->facebook_link = $request->facebook_link;

@@ -19,8 +19,9 @@ class CreateParticipantsTable extends Migration
             $table->string('university');
             $table->string('year');
             $table->string('primary_division');
+            $table->text('primary_reason');
             $table->string('secondary_division');
-            $table->text('explanation');
+            $table->text('secondary_reason');
             $table->string('email');
             $table->string('instagram_link')->nullable();
             $table->string('twitter_link')->nullable();

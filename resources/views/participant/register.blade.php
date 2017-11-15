@@ -39,6 +39,11 @@
                         </div>
 
                         <div class="form-group">
+                            {{Form::label('email', 'Email', ['class' => 'control-label'])}}
+                            {{Form::email('email', '', ['class' => 'form-control'])}}
+                        </div>
+
+                        <div class="form-group">
                             {{Form::label('primary_division', 'Divisi pilihanmu (prioritas) ', ['class' => 'control-label'])}}
                             <br>
                             {{ Form::select('primary_division', [
@@ -51,6 +56,11 @@
                                 'Creative' => 'Creative',
                                 'IT' => 'IT'
                             ], null, ['placeholder' => 'Choose...'], ['class' => 'form-control']) }}
+                        </div>
+
+                        <div class="form-group">
+                            {{Form::label('primary_reason', 'Ceritakan alasanmu memilih divisi itu', ['class' => 'control-label'])}}
+                            {{Form::textarea('primary_reason', '', ['class' => 'form-control', 'rows' => 2])}}
                         </div>
 
                         <div class="form-group">
@@ -69,33 +79,28 @@
                         </div>
 
                         <div class="form-group">
-                            {{Form::label('explanation', 'Ceritakan alasanmu memilih divisi itu', ['class' => 'control-label'])}}
-                            {{Form::text('explanation', '', ['class' => 'form-control'])}}
+                            {{Form::label('secondary_reason', 'Ceritakan alasanmu memilih divisi itu', ['class' => 'control-label'])}}
+                            {{Form::textarea('secondary_reason', '', ['class' => 'form-control', 'rows' => 2])}}
                         </div>
 
                         <div class="form-group">
-                            {{Form::label('email', 'Email', ['class' => 'control-label'])}}
-                            {{Form::email('email', '', ['class' => 'form-control'])}}
-                        </div>
-
-                        <div class="form-group">
-                            {{Form::label('instagram_link', 'Instagram', ['class' => 'control-label'])}}
-                            {{Form::text('instagram_link', '', ['class' => 'form-control'])}}
+                            {{Form::label('instagram_link', 'ID Instagram', ['class' => 'control-label'])}}
+                            {{Form::text('instagram_link', '', ['class' => 'form-control', 'placeholder' => 'ex: wkwksama'])}}
                         </div>
 
                         <div class="form-group">
                             {{Form::label('twitter_link', 'Twitter', ['class' => 'control-label'])}}
-                            {{Form::text('twitter_link', '', ['class' => 'form-control'])}}
+                            {{Form::text('twitter_link', '', ['class' => 'form-control', 'placeholder' => 'ex: wkwksama'])}}
                         </div>
 
                         <div class="form-group">
                             {{Form::label('facebook_link', 'Facebook', ['class' => 'control-label'])}}
-                            {{Form::text('facebook_link', '', ['class' => 'form-control'])}}
+                            {{Form::text('facebook_link', '', ['class' => 'form-control', 'placeholder' => 'ex: wkwksama'])}}
                         </div>
 
                         <div class="form-group">
-                            {{Form::label('participant_cv', 'Upload CV kamu : ', ['class' => 'control-label'])}}
-                            {{Form::file('participant_cv', '', ['required' => ['required']])}}
+                            {{Form::label('file_cv', 'Upload CV kamu : ', ['class' => 'control-label'])}}
+                            {{Form::file('file_cv', '', ['required' => ['required']])}}
                         </div>
 
                         {{Form::submit('Submit', ['class' => 'btn btn-danger btn-block btn-round'])}}
@@ -119,7 +124,7 @@
                 </div>
             </div>
 			<div class="footer register-footer text-center">
-				<h6>&copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by Creative FLS</h6>
+				<h6>&copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by wkwkFLS</h6>
 			</div>
         </div>
     </div>
