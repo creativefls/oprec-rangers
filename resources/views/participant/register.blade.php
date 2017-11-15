@@ -21,6 +21,13 @@
                         @endif
                         <img src="{{ asset('img/fls_logo_white_bot.png') }}" class="img-fluid mx-auto d-block" alt="Future Leader Summit">
                         <h3 class="title">Pendaftaran Rangers 2018</h3>
+                        <p>Halo Young Leaders!</p>
+                        <p>
+                            Terima kasih atas keberanianmu dalam melakukan kebaikan bersama kami.
+                            <br>
+                            Silakan isi format aplikasi di bawah untuk memulai perjalananmu bersama FLS 2018.
+                        </p>
+                        <hr>
 
                         {{Form::open(['route' => 'participants.store', 'files' => true])}}
                         <div class="form-group">
