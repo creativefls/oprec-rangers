@@ -47,6 +47,7 @@ class ParticipantController extends Controller
             'secondary_division'=> 'required',
             'secondary_reason'  => 'required',
             'file_cv'           => 'required|mimes:pdf',
+            'portfolio_link'    => 'url',
             'email'             => 'required|unique:participants'
         ]);
 

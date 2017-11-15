@@ -106,6 +106,12 @@
                             {{Form::file('file_cv', '', ['required' => ['required']])}}
                         </div>
 
+                        <div class="form-group">
+                          {{Form::label('portfolio_link', 'Link Portofolio', ['class' => 'control-label'])}}
+                          <p>* untuk Creative dan IT</p>
+                          {{Form::text('portfolio_link', '', ['class' => 'form-control', 'placeholder' => 'ex: wkwksama.deviantart.com'])}}
+                        </div>
+
                         {{Form::submit('Submit', ['class' => 'btn btn-danger btn-lg btn-round'])}}
 
                         {{Form::close()}}
@@ -165,6 +171,21 @@
         }
         .img-fluid {
             max-width: 50%;
+        }
+        input::-webkit-input-placeholder {
+            color: grey !important;
+        }
+
+        input:-moz-placeholder { /* Firefox 18- */
+            color: grey !important;
+        }
+
+        input::-moz-placeholder {  /* Firefox 19+ */
+            color: grey !important;
+        }
+
+        input:-ms-input-placeholder {
+            color: grey !important;
         }
     </style>
 @endsection
