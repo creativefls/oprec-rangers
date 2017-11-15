@@ -39,14 +39,14 @@ class ParticipantController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'name'      => 'required',
-            'university'      => 'required',
-            'year'      => 'required',
-            'primary_division'      => 'required',
-            'secondary_division'      => 'required',
-            'explanation'      => 'required',
-            'participant_cv'      => 'required',
-            'email'     => 'required|unique:participants'
+            'name'              => 'required',
+            'university'        => 'required',
+            'year'              => 'required',
+            'primary_division'  => 'required',
+            'secondary_division'=> 'required',
+            'explanation'       => 'required',
+            'participant_cv'    => 'required',
+            'email'             => 'required|unique:participants'
         ]);
 
         $cvFileName = str_replace(" ", "_", $request->name) . '_' . time() . '.' . $request->participant_cv->getClientOriginalExtension();
