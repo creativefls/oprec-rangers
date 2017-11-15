@@ -1,7 +1,7 @@
 @extends('participant.layout')
 
 @section('content')
-    <div class="page-header" style="background-image: url('{{ asset('paper-kit-2/img/login-image.jpg') }}');">
+    <div class="page-header" style="background-image: url('{{ asset('img/sponsorship/bg_2017_white.png') }}'); background-attachment: fixed;">
         <div class="filter"></div>
         <div class="container">
             <div class="row justify-content-center">
