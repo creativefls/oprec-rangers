@@ -43,10 +43,10 @@ class ParticipantController extends Controller
             'university'        => 'required',
             'year'              => 'required',
             'primary_division'  => 'required',
-            'primary_reason'       => 'required',
+            'primary_reason'    => 'required',
             'secondary_division'=> 'required',
-            'secondary_reason'       => 'required',
-            'file_cv'    => 'required',
+            'secondary_reason'  => 'required',
+            'file_cv'           => 'required|mimes:pdf',
             'email'             => 'required|unique:participants'
         ]);
 

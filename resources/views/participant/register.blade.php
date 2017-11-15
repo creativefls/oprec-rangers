@@ -19,7 +19,7 @@
                                 </div>
                             </div>
                         @endif
-                        <h3 class="title">Pendaftaran Ranger FLS 2018</h3>
+                        <h3 class="title">Pendaftaran Rangers FLS 2018</h3>
 
                         {{Form::open(['route' => 'participants.store', 'files' => true])}}
                         <div class="form-group">
@@ -100,6 +100,8 @@
 
                         <div class="form-group">
                             {{Form::label('file_cv', 'Upload CV kamu : ', ['class' => 'control-label'])}}
+                            <p>* file harus berformat .pdf</p>
+                            <p>* maksimal ukuran 1,9 MB</p>
                             {{Form::file('file_cv', '', ['required' => ['required']])}}
                         </div>
 
