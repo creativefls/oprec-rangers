@@ -1,8 +1,8 @@
 <?php
 
-//Wizard Sponsor Submit
+//Wizard Participant Submit
 Route::get('/', 'ParticipantController@create');
-Route::post('/sponsor', 'SponsorController@store');
+Route::post('/participants', 'ParticipantController@store')->name('participants.store');
 Route::get('/home', 'HomeController@index')->name('home');
 
 //Route auth bawaan artisan make auth
@@ -11,8 +11,8 @@ Auth::routes();
 //Admin Dashboard
 Route::middleware(['auth'])->prefix('admin')->group(function (){
     Route::get('/', 'DashboardController@show')->name('dashboard');// Matches The "/admin" URL
-    Route::get('sponsors', 'SponsorController@index')->name('sponsors.index');
-    Route::get('sponsors/{id}', 'SponsorController@show')->name('sponsors.show');
+    Route::get('participants', 'ParticipantController@index')->name('participants.index');
+    Route::get('participants/{id}', 'ParticipantController@show')->name('participants.show');
 });
 
 // bagian dashboard khusus super admin
@@ -20,4 +20,7 @@ Route::middleware(['superadmin'])->prefix('admin')->group(function (){
     Route::resource('users', 'UserController');
 });
 
-Route::resource('participants', 'ParticipantController');
+// Route::resource('participants', 'ParticipantController');
+
+ // Route temporary, buat coba2 tampilan
+Route::get('/temp', 'HomeController@temp')->name('temp');
