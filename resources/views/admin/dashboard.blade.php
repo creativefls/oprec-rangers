@@ -21,13 +21,15 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row">
         <div class="col-lg-3 col-sm-6">
             <div class="card">
                 <div class="content">
                     <div class="row">
                         <div class="col-xs-5">
-                            <div class="icon-big icon-success text-center">
-                                <i class="ti-wallet"></i>
+                            <div class="icon-big icon-info text-center">
+                                <i class="ti-pulse"></i>
                             </div>
                         </div>
                         <div class="col-xs-7">
@@ -45,7 +47,7 @@
                 <div class="content">
                     <div class="row">
                         <div class="col-xs-5">
-                            <div class="icon-big icon-danger text-center">
+                            <div class="icon-big icon-info text-center">
                                 <i class="ti-pulse"></i>
                             </div>
                         </div>
