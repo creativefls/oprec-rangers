@@ -5,7 +5,7 @@
         <div class="col-md-12">
             <div class="card card-plain">
                 <div class="header">
-                    <h4 class="title">Tabel Opre</h4>
+                    <h4 class="title">Tabel Pendaftar Oprec</h4>
                     <p class="category">Future Leader Summit</p>
                 </div>
                 <div class="content table-responsive table-full-width">
