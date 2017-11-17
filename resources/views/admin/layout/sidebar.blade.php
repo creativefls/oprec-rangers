@@ -1,7 +1,7 @@
 <div class="sidebar" data-background-color="black" data-active-color="warning">
     <div class="sidebar-wrapper">
         <div class="logo">
-            <a href="http://www.creative-tim.com" class="simple-text">
+            <a href="/" class="simple-text">
                 Oprec FLS
             </a>
         </div>

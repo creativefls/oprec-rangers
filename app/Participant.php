@@ -11,35 +11,35 @@ class Participant extends Model
     }
 
     public function countProgram(){
-        return $this->where('primary_division', 'Program')->count();
+        return $this->where('primary_division', 'Program')->orWhere('secondary_division', 'Program')->count();
     }
 
     public function countMarketing(){
-        return $this->where('primary_division', 'Marketing')->count();
+        return $this->where('primary_division', 'Marketing')->orWhere('secondary_division', 'Marketing')->count();
     }
 
     public function countCommunication(){
-        return $this->where('primary_division', 'Communication')->count();
+        return $this->where('primary_division', 'Communication')->orWhere('secondary_division', 'Communication')->count();
     }
 
     public function countLO(){
-        return $this->where('primary_division', 'LO')->count();
+        return $this->where('primary_division', 'LO')->orWhere('secondary_division', 'LO')->count();
     }
 
     public function countGeneralAffairs(){
-        return $this->where('primary_division', 'General Affairs')->count();
+        return $this->where('primary_division', 'General Affairs')->orWhere('secondary_division', 'General Affairs')->count();
     }
 
     public function countPID(){
-        return $this->where('primary_division', 'PID')->count();
+        return $this->where('primary_division', 'PID')->orWhere('secondary_division', 'PID')->count();
     }
 
     public function countCreative(){
-        return $this->where('primary_division', 'Creative')->count();
+        return $this->where('primary_division', 'Creative')->orWhere('secondary_division', 'Creative')->count();
     }
 
     public function countIT(){
-        return $this->where('primary_division', 'IT')->count();
+        return $this->where('primary_division', 'IT')->orWhere('secondary_division', 'IT')->count();
     }
 
 }
