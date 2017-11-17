@@ -41,6 +41,8 @@
         }
     </style>
 
+    @yield('css')
+
 </head>
 <body>
 
