@@ -12,6 +12,7 @@ Auth::routes();
 Route::middleware(['auth'])->prefix('admin')->group(function (){
     Route::get('/', 'DashboardController@show')->name('dashboard');// Matches The "/admin" URL
     Route::get('participants', 'ParticipantController@index')->name('participants.index');
+    Route::get('participants/div/{division}', 'ParticipantController@indexDivision')->name('participants.division');
     Route::get('participants/{id}', 'ParticipantController@show')->name('participants.show');
 });
 

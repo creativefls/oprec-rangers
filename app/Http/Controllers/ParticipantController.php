@@ -20,6 +20,13 @@ class ParticipantController extends Controller
         return view('admin.participant-table', compact('participants'));
     }
 
+    public function indexDivision($division)
+    {
+        $participants = Participant::where('primary_division', $division)->orWhere('secondary_division', $division)->get();
+
+        return view('admin.participant-table', compact('participants'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

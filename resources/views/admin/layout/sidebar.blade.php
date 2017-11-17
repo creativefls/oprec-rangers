@@ -19,6 +19,48 @@
                     <p>Tabel Pendaftar</p>
                 </a>
             </li>
+            <li class="{{ Route::current() == "/participants/div/Marketing" ? "active" : "" }}">
+                <a class="left-padding" href="{{ route('participants.division', 'Marketing') }}">
+                    <i class="ti-angle-right"></i>
+                    <p>Marketing</p>
+                </a>
+            </li>
+            <li class="{{ Route::current() == "/participants/div/Program" ? "active" : "" }}">
+                <a class="left-padding" href="{{ route('participants.division', 'Program') }}">
+                    <i class="ti-angle-right"></i>
+                    <p>Program</p>
+                </a>
+            </li>
+            <li class="{{ Route::current() == "/participants/div/General Affairs" ? "active" : "" }}">
+                <a class="left-padding" href="{{ route('participants.division', 'General Affairs') }}">
+                    <i class="ti-angle-right"></i>
+                    <p>General Affairs</p>
+                </a>
+            </li>
+            <li class="{{ Route::current() == "/participants/div/Communication" ? "active" : "" }}">
+                <a class="left-padding" href="{{ route('participants.division', 'Communication') }}">
+                    <i class="ti-angle-right"></i>
+                    <p>Communication</p>
+                </a>
+            </li>
+            <li class="{{ Route::current() == "/participants/div/LO" ? "active" : "" }}">
+                <a class="left-padding" href="{{ route('participants.division', 'LO') }}">
+                    <i class="ti-angle-right"></i>
+                    <p>LO</p>
+                </a>
+            </li>
+            <li class="{{ Route::current() == "/participants/div/Creative" ? "active" : "" }}">
+                <a class="left-padding" href="{{ route('participants.division', 'Creative') }}">
+                    <i class="ti-angle-right"></i>
+                    <p>Creative</p>
+                </a>
+            </li>
+            <li class="{{ Route::current() == "/participants/div/PID" ? "active" : "" }}">
+                <a class="left-padding" href="{{ route('participants.division', 'PID') }}">
+                    <i class="ti-angle-right"></i>
+                    <p>PID</p>
+                </a>
+            </li>
             @if (Auth::user()->role == 0)
                 <li class="active-pro">
                     <a href="{{ route('users.index') }}">

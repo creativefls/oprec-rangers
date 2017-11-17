@@ -28,6 +28,19 @@
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="/paper-dashboard/css/themify-icons.css" rel="stylesheet">
 
+    <style media="screen">
+        .sidebar li a{
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+        .sidebar li a.left-padding{
+            padding-left: 40px !important;
+        }
+        .sidebar li a.left-padding i {
+            font-size: 16px !important;
+        }
+    </style>
+
 </head>
 <body>
 
