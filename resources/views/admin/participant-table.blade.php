@@ -16,6 +16,7 @@
                         	<th>Univ</th>
                         	<th>Divisi (utama)</th>
                             <th>Divisi (cadangan)</th>
+                            <th>Email</th>
                         	<th>CV</th>
                             <th> - </th>
                         </thead>
@@ -27,11 +28,12 @@
                                     <td>{{ $participant->university }}</td>
                                     <td>{{ $participant->primary_division }}</td>
                                     <td>{{ $participant->secondary_division }}</td>
+                                    <td>{{ $participant->email }}</td>
                                     <td>
                                         <a href="{{ $participant->cv_file }}" target="_blank" class="btn btn-success">Lihat CV</a>
                                     </td>
                                     <td>
-                                        <a href="{{ route('participants.show', $participant->id) }}" class="btn btn-info">Lihat Lebih Lengkap</a>
+                                        <a href="{{ route('participants.show', $participant->id) }}" class="btn btn-info">Selengkapnya</a>
                                     </td>
                                 </tr>
                             @endforeach
