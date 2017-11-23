@@ -1,7 +1,9 @@
 <?php
 
 //Wizard Participant Submit
-Route::get('/', 'ParticipantController@create');
+Route::get('/', function () {
+    return redirect('http://futureleadersummit.org');
+});
 Route::post('/participants', 'ParticipantController@store')->name('participants.store');
 Route::get('/home', 'HomeController@index')->name('home');
 
